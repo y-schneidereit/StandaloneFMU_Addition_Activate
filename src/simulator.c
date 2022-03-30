@@ -5,7 +5,7 @@
 
 // model specific constants
 #define GUID "Activate FMU-2.0 sb_Addition_Activate (mecs:1) 2022-03-30"
-#define RESOURCE_LOCATION "file:///C:/Users/schyan01/github/standalonefmu_addition_activate/sb_Addition_Activate" // absolut path to the unziped fmu
+#define RESOURCE_LOCATION "file:///Users/schyan01/github/StandaloneFMU_Addition_Activate/sb_Addition_Activate" // absolut path to the unziped fmu
 
 // callback functions
 static void cb_logMessage(fmi2ComponentEnvironment componentEnvironment, fmi2String instanceName, fmi2Status status, fmi2String category, fmi2String message, ...) {
@@ -23,8 +23,8 @@ static void cb_freeMemory(void* obj) {
 #define CHECK_STATUS(S) { status = S; if (status != fmi2OK) goto TERMINATE; }
 
 int main(int argc, char *argv[]) {
-	HMODULE libraryHandle = LoadLibraryA("C:\\Users\\schyan01\\github\\StandaloneFMU_Addition_Activate\\sb_Additon_Activate\\binaries\\win64\\libsb_Addition_Activate.dll");
-
+	HMODULE libraryHandle = LoadLibraryA("C:\\Users\\schyan01\\github\\StandaloneFMU_Addition_Activate\\sb_Addition_Activate\\binaries\\win64\\libsb_Addition_Activate.dll");
+	
 	if (!libraryHandle)
 	{
 		return EXIT_FAILURE;

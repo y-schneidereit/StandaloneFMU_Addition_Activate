@@ -8,7 +8,7 @@ add_executable(simulator
 
 target_include_directories(simulator PUBLIC
 	include
-	model/binaries/win64
+	sb_Addition_Activate/binaries/win64
 )
 
 if (MSVC)

@@ -23,7 +23,7 @@ static void cb_freeMemory(void* obj) {
 #define CHECK_STATUS(S) { status = S; if (status != fmi2OK) goto TERMINATE; }
 
 int main(int argc, char *argv[]) {
-	HMODULE libraryHandle = LoadLibraryA("C:\\Users\\schyan01\\github\\StandaloneFMU_Addition_binaries\\model\\binaries\\win64\\Addition_binaries.dll");
+	HMODULE libraryHandle = LoadLibraryA("C:\\Users\\schyan01\\github\\StandaloneFMU_Addition_Activate\\sb_Additon_Activate\\binaries\\win64\\libsb_Addition_Activate.dll");
 
 	if (!libraryHandle)
 	{

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription fmiVersion="2.0" modelName="sb_Addition_Activate" description=" " generationTool="Activate" generationDateAndTime="2022-03-30T08:24:28Z" version="2021.2" guid="Activate FMU-2.0 sb_Addition_Activate (mecs:1) 2022-03-30" variableNamingConvention="flat" numberOfEventIndicators="0">
+  <CoSimulation modelIdentifier="libsb_Addition_Activate" needsExecutionTool="false" canBeInstantiatedOnlyOncePerProcess="false" canGetAndSetFMUstate="false" providesDirectionalDerivative="false" canHandleVariableCommunicationStepSize="true" canInterpolateInputs="true" maxOutputDerivativeOrder="1"/>
+  <LogCategories>
+    <Category name="all" description="show all messages"/>
+    <Category name="fmicall" description="show only calls to the FMI block"/>
+    <Category name="event" description="show only events"/>
+    <Category name="error" description="show only error messages"/>
+    <Category name="warning" description="show only warning messages"/>
+    <Category name="info" description="show only information messages"/>
+  </LogCategories>
+  <DefaultExperiment startTime="0." stopTime="30." tolerance="1e-06" stepSize="0.3"/>
+  <ModelVariables>
+    <ScalarVariable name="Solver.Time_Tolerance" valueReference="10" description="solverSolver.Time_Tolerance" causality="local" variability="constant" initial="exact">
+      <String start="auto"/>
+    </ScalarVariable>
+    <ScalarVariable name="Solver.Absolute_Tolerance" valueReference="9" description="solverSolver.Absolute_Tolerance" causality="local" variability="constant" initial="exact">
+      <String start="1e-06"/>
+    </ScalarVariable>
+    <ScalarVariable name="Solver.Relative_Tolerance" valueReference="8" description="solverSolver.Relative_Tolerance" causality="local" variability="constant" initial="exact">
+      <String start="1e-06"/>
+    </ScalarVariable>
+    <ScalarVariable name="Solver.Internal.Max_Stepsize" valueReference="7" description="solverSolver.Internal.Max_Stepsize" causality="local" variability="constant" initial="exact">
+      <String start="auto"/>
+    </ScalarVariable>
+    <ScalarVariable name="Solver.Internal.Min_Stepsize" valueReference="6" description="solverSolver.Internal.Min_Stepsize" causality="local" variability="constant" initial="exact">
+      <String start="auto"/>
+    </ScalarVariable>
+    <ScalarVariable name="Solver.Internal.Init_Stepsize" valueReference="5" description="solverSolver.Internal.Init_Stepsize" causality="local" variability="constant" initial="exact">
+      <String start="auto"/>
+    </ScalarVariable>
+    <ScalarVariable name="Solver.Internal.ZeroCrossing_Threshold" valueReference="4" description="solverSolver.Internal.ZeroCrossing_Threshold" causality="local" variability="constant" initial="exact">
+      <String start="auto"/>
+    </ScalarVariable>
+    <ScalarVariable name="Solver.Internal.ZeroCrossing_Time_Tolerance" valueReference="3" description="solverSolver.Internal.ZeroCrossing_Time_Tolerance" causality="local" variability="constant" initial="exact">
+      <String start="auto"/>
+    </ScalarVariable>
+    <ScalarVariable name="Solver.Internal.Dynamical_Solver_Name" valueReference="2" description="solverSolver.Internal.Dynamical_Solver_Name" causality="local" variability="constant" initial="exact">
+      <String start="LSODAR"/>
+    </ScalarVariable>
+    <ScalarVariable name="Solver.Internal.Algebraic_Solver_Name" valueReference="1" description="solverSolver.Internal.Algebraic_Solver_Name" causality="local" variability="constant" initial="exact">
+      <String start="IDACALC"/>
+    </ScalarVariable>
+    <ScalarVariable name="Solver.Internal.Jacobian_Method" valueReference="0" description="solverSolver.Internal.Jacobian_Method" causality="local" variability="constant" initial="exact">
+      <String start="Numerical"/>
+    </ScalarVariable>
+    <ScalarVariable name="Output" valueReference="2" description="output" causality="output" variability="continuous" initial="calculated">
+      <Real/>
+    </ScalarVariable>
+    <ScalarVariable name="Input" valueReference="1" description="input" causality="input" variability="continuous">
+      <Real start="0.0"/>
+    </ScalarVariable>
+    <ScalarVariable name="Input_1" valueReference="0" description="input" causality="input" variability="continuous">
+      <Real start="0.0"/>
+    </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Outputs>
+      <Unknown index="12" dependencies=" 13 14"/>
+    </Outputs>
+    <InitialUnknowns>
+      <Unknown index="12" dependencies=" 13 14"/>
+    </InitialUnknowns>
+  </ModelStructure>
+</fmiModelDescription>

@@ -4,8 +4,8 @@
 #include "fmi2Functions.h"
 
 // model specific constants
-#define GUID "{49ca57ed-9c93-416f-6bc9-ee0ef5a44226}"
-#define RESOURCE_LOCATION "file:///C:/Users/schyan01/github/standalonefmu_addition_binaries" // absolut path to the unziped fmu
+#define GUID "Activate FMU-2.0 sb_Addition_Activate (mecs:1) 2022-03-30"
+#define RESOURCE_LOCATION "file:///C:/Users/schyan01/github/standalonefmu_addition_activate/sb_Addition_Activate" // absolut path to the unziped fmu
 
 // callback functions
 static void cb_logMessage(fmi2ComponentEnvironment componentEnvironment, fmi2String instanceName, fmi2Status status, fmi2String category, fmi2String message, ...) {

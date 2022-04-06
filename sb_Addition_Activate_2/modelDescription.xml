@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fmiModelDescription
-	fmiVersion="2.0" 
-	modelName="sb_Addition_Activate" 
-	description=" " 
-	generationTool="Activate" 
-	generationDateAndTime="2022-03-30T08:24:28Z" 
-	version="2021.2" 
-	guid="Activate FMU-2.0 sb_Addition_Activate (mecs:1) 2022-03-30" 
-	variableNamingConvention="flat" 
-	numberOfEventIndicators="0">
-  <CoSimulation 
-	  modelIdentifier="libsb_Addition_Activate" 
-	  needsExecutionTool="false" 
-	  canBeInstantiatedOnlyOncePerProcess="false" 
-	  canGetAndSetFMUstate="false" 
-	  providesDirectionalDerivative="false" 
-	  canHandleVariableCommunicationStepSize="true" 
-	  canInterpolateInputs="true" 
-	  maxOutputDerivativeOrder="1"/>
+<fmiModelDescription fmiVersion="2.0" modelName="sb_Addition_Activate" description=" " generationTool="Activate" generationDateAndTime="2022-03-30T08:24:28Z" version="2021.2" guid="Activate FMU-2.0 sb_Addition_Activate (mecs:1) 2022-03-30" variableNamingConvention="flat" numberOfEventIndicators="0">
+  <CoSimulation modelIdentifier="libsb_Addition_Activate" needsExecutionTool="false" canBeInstantiatedOnlyOncePerProcess="false" canGetAndSetFMUstate="false" providesDirectionalDerivative="false" canHandleVariableCommunicationStepSize="true" canInterpolateInputs="true" maxOutputDerivativeOrder="1"/>
   <LogCategories>
     <Category name="all" description="show all messages"/>
     <Category name="fmicall" description="show only calls to the FMI block"/>

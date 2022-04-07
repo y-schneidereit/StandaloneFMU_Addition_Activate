@@ -55,6 +55,7 @@ void ErrorExit(LPTSTR lpszFunction)
 	LocalFree(lpDisplayBuf);
 	ExitProcess(dw);
 }
+
 int main(int argc, char *argv[])
 {	
 	HMODULE libraryHandle = LoadLibraryA("C:\\Users\\schyan01\\github\\StandaloneFMU_Addition_Activate\\sb_Addition_Activate_2\\binaries\\win64\\libsb_Addition_Activate.dll");

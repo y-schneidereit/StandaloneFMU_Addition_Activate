@@ -21,6 +21,7 @@ static void cb_freeMemory(void* obj) {
 }
 
 #define CHECK_STATUS(S) { status = S; if (status != fmi2OK) goto TERMINATE; }
+
 #include <strsafe.h>
 void ErrorExit(LPTSTR lpszFunction)
 {
@@ -54,9 +55,12 @@ void ErrorExit(LPTSTR lpszFunction)
 	LocalFree(lpDisplayBuf);
 	ExitProcess(dw);
 }
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{	
 	HMODULE libraryHandle = LoadLibraryA("C:\\Users\\schyan01\\github\\StandaloneFMU_Addition_Activate\\sb_Addition_Activate_2\\binaries\\win64\\libsb_Addition_Activate.dll");
+	
 	ErrorExit(TEXT("LoadLibraryA"));
+	
 	if (!libraryHandle)
 	{
 		return EXIT_FAILURE;
